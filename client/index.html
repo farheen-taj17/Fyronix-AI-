@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyronix AI - Real-Time Analytics Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="background-animation"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Fyronix AI</h2>
+        </div>
+
+        <ul class="menu">
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                Users
+            </li>
+
+            <li>
+                <i class="fa-solid fa-wallet"></i>
+                Revenue
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-robot"></i>
+                AI Assistant
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <header class="navbar">
+
+            <div class="welcome">
+                <h1>Fyronix AI Dashboard</h1>
+                <p>Real-Time Intelligence Powered by AI</p>
+            </div>
+
+            <div class="nav-actions">
+
+                <input
+                    type="text"
+                    id="searchBar"
+                    placeholder="Search..."
+                >
+
+                <button id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <h3>Total Users</h3>
+                <h2 id="users">0</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+
+                <h3>Revenue</h3>
+                <h2 id="revenue">$0</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <h3>Sales</h3>
+                <h2 id="sales">0</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+
+                <h3>Visitors</h3>
+                <h2 id="visitors">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Charts -->
+        <section class="chart-section">
+
+            <div class="chart-card">
+
+                <h2>Revenue Analytics</h2>
+
+                <canvas id="revenueChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <!-- AI Assistant -->
+        <section class="ai-section">
+
+            <div class="ai-card">
+
+                <h2>
+                    <i class="fa-solid fa-robot"></i>
+                    AI Analytics Assistant
+                </h2>
+
+                <p>
+                    Generate AI insights from dashboard data.
+                </p>
+
+                <button id="aiBtn">
+                    Generate AI Insights
+                </button>
+
+                <div id="aiResponse">
+
+                    AI insights will appear here...
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Notifications -->
+        <section class="notification-section">
+
+            <div class="notification-card">
+
+                <h2>
+                    <i class="fa-solid fa-bell"></i>
+                    Live Notifications
+                </h2>
+
+                <ul id="notificationList">
+
+                    <li>System started successfully.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="activity-section">
+
+            <div class="activity-card">
+
+                <h2>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Recent Activity
+                </h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="activityTable">
+
+                        <tr>
+                            <td>09:00 AM</td>
+                            <td>Dashboard Loaded</td>
+                            <td>Success</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                © 2026 Fyronix AI |
+                Real-Time Intelligence Platform
+            </p>
+
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
