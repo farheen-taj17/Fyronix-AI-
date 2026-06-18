@@ -5,20 +5,13 @@ Next-Generation AI-Powered Real-Time Analytics Platform
 
 Transforming Data into Intelligent Insights Through Real-Time Analytics and AI-Driven Decision Making
 
-
-
-
-
-
-
-
-
-
-
-
 🌟 Built by Farheen Taj
 </div>
 📖 Overview
+
+Fyronix screenshorts 
+
+<img width="1866" height="912" alt="Image" src="https://github.com/user-attachments/assets/f70d443e-4823-4dea-9cd5-13b0a37fa6bd" />
 
 Fyronix-AI Dashboard is a modern full-stack analytics platform designed to provide real-time monitoring, intelligent data visualization, and AI-powered insights for businesses and organizations.
 
