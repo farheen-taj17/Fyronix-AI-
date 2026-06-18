@@ -19,6 +19,9 @@ Fyronix screenshorts
 
 <img width="1875" height="895" alt="Image" src="https://github.com/user-attachments/assets/b6d263d3-2a6c-4791-81ea-e126d60471d3" />
 
+In day mood
+<img width="1885" height="908" alt="Image" src="https://github.com/user-attachments/assets/0fe7ea2f-5aba-4d3b-b764-dffff015e790" />
+
 Fyronix-AI Dashboard is a modern full-stack analytics platform designed to provide real-time monitoring, intelligent data visualization, and AI-powered insights for businesses and organizations.
 
 The platform combines real-time data streaming, scalable architecture, and modern software engineering practices to deliver actionable intelligence through an intuitive and interactive dashboard.
